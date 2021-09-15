@@ -1,0 +1,225 @@
+/*
+    Style colors
+*/
+
+:root {
+    --mRed: #FF1F41;
+    --mBlue: #0C39B1;
+    --mGreen: #1EBA6E;
+    --mOrange: #FF8912;
+    --mPurple: #7F0F8B;
+    --mInfo: #1B1697;
+    --mBrown: #8D5B2D;
+    --mYellow: #FFCC00;
+    --mGrey: #999999;
+    --mWhite: #FFFFFF;
+    --mBlack: #000000;
+    --optionsAttachedHeaderBottomMargin: 0px;
+}
+
+@font-face {
+    font-family: "mHeading";
+    src: url("../fonts/CoreSansD67CnHeavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "mMain";
+    src: url("../fonts/FreeSet_Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "mNumber";
+    src: url("../fonts/Arial_Greek_Bold.ttf") format("truetype");
+}
+
+body, p {
+    font-family: "mMain", sans-serif;
+    margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,li,#logo {
+    font-family: "mHeading", sans-serif;
+    text-transform: uppercase;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.number {
+    font-family: "mNumber";
+}
+
+
+/*
+    HEADERS AND MENUS
+*/
+
+header {
+    position: relative;
+    color: var(--mWhite);
+}
+
+.header {
+    background-color: var(--mInfo);
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+}
+
+.logo {
+    /*float: left;*/
+    color: var(--mWhite);
+    font-size: 26pt;
+}
+
+
+.menu, .menu > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+.menu > ul > li {
+    list-style-type: none;
+    font-size: 16pt;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu > ul > li > a {
+    color: inherit;
+    text-decoration: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu > ul > li > a:hover {
+    text-decoration: underline var(--mWhite);
+}
+
+
+/*
+    PAGE HEADERS
+ */
+
+.page-header {
+    background-color: var(--mInfo);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 20px;
+}
+
+.page-header-box {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.attached {
+    background: linear-gradient(0deg, var(--mWhite) 50%, var(--mInfo) 50%);
+}
+
+.attached > .page-header-box {
+    background-color: var(--mWhite);
+    color: var(--mInfo);
+    border-radius: 30px 30px 30px 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.attached > .page-header-box h1 {
+    font-size: 72pt;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    vertical-align: text-top;
+}
+
+.attached > .page-header-box p {
+    color: var(--mBlack);
+}
+
+
+/*
+    MAIN AND ASIDE
+ */
+
+main {
+    display: block;
+}
+aside {
+    width: 30%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+/*
+    FOOTER
+ */
+
+footer {
+    /*display: block;*/
+    /*position: relative;*/
+    color: var(--mWhite);
+}
+
+.footer {
+    background-color: var(--mInfo);
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+}
+
+.corporate-links {
+    width: 100%;
+}
+
+.corporate-links, .corporate-links > ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.corporate-links > ol > li:not(:last-child):after {
+    content: " | ";
+    word-spacing: 1em;
+}
+
+/*.corporate-links > ol > li:first-child {*/
+/*    border-left: none;*/
+/*    padding-left: 0;*/
+/*}*/
+
+/*.corporate-links > ol > li:not(:first-child) {*/
+/*    display: inline;*/
+/*    border-left: 2px solid;*/
+/*    padding-left: 0.3em;*/
+/*    padding-right: 0.3em;*/
+/*}*/
