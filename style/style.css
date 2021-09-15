@@ -162,16 +162,28 @@ header {
  */
 
 main {
-    display: block;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+article {
+    width:70%;
+
 }
 aside {
-    width: 30%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
+    width:30%;
+
+    /*display: inherit;*/
+    /*display: none;*/
+    /*width: 30%;*/
+    /*padding-left: .5rem;*/
+    /*margin-left: .5rem;*/
+    /*float: right;*/
+    /*box-shadow: inset 5px 0 5px -5px #29627e;*/
+    /*font-style: italic;*/
+    /*color: #29627e;*/
 }
 
 /*
