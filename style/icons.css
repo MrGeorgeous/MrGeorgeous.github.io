@@ -1,0 +1,29 @@
+.i-telegram {
+    -webkit-mask-image: url("icons/telegram-plane-brands.svg");
+    mask-image: url("icons/telegram-plane-brands.svg");
+}
+
+.i-email {
+    -webkit-mask-image: url("icons/envelope-regular.svg");
+    mask-image: url("icons/envelope-regular.svg");
+}
+
+.i-github {
+    -webkit-mask-image: url("icons/github-brands.svg");
+    mask-image: url("icons/github-brands.svg");
+}
+
+.i-vk {
+    -webkit-mask-image: url("icons/vk-brands.svg");
+    mask-image: url("icons/vk-brands.svg");
+}
+
+.i-twitter {
+    -webkit-mask-image: url("icons/twitter-brands.svg");
+    mask-image: url("icons/twitter-brands.svg");
+}
+
+.i-info {
+    -webkit-mask-image: url("icons/info-solid.svg");
+    mask-image: url("icons/info-solid.svg");
+}
