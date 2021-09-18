@@ -1,0 +1,49 @@
+.button {
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px;
+  border: 3px solid var(--mWhite);
+  font-family: mHeading;
+  font-size: 1.5em;
+  width: fit-content;
+  display: block;
+}
+
+.button-black, .buttons.button-black > .button {
+  border: 3px solid var(--mBlack);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+a.button {
+  padding: 5px 0px 5px 0px;
+}
+
+a.button, a.button > * {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  @extend .flex;
+  align-items: center;
+  gap: 3px;
+}
+
+a.button:hover {
+  text-decoration: none;
+}
+
+//a.button .icon, a.button i {
+//  vertical-align: middle;
+//  font-size: auto;
+//}
+
+
+
+.buttons {
+  margin-top:5px;
+  margin-bottom:5px;
+  padding: 5px;
+  @extend .flex;
+  @extend .left;
+}

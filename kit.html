@@ -15,7 +15,7 @@
   <body>
 
         <header>
-            <nav class="header flex">
+            <nav class="header">
                 <h1 class="logo">Georgii Semenov</h1>
                 <ul>
                     <li><a href="">Главная</a></a></li>
@@ -26,9 +26,9 @@
                 </ul>
             </nav>
 
-            <!-- с тегом attached становится летучей карточкой -->
-            <div class="page-header attached" id="page-header">
-                <div class="page-header-box">
+            <!-- с тегом header-floating становится летучей карточкой -->
+            <div class="page-header header-floating" id="page-header">
+                <div class="container">
                     <h1>UI Kit</h1>
                     <p>Элементы, кнопки и статьи для наполнения этого сайта.</p>
                 </div>
@@ -36,9 +36,196 @@
 
         </header>
 
+<!--        <div class="container">-->
+<!--            <h1>UI Kit</h1>-->
+<!--            <p>Элементы, кнопки и статьи для наполнения этого сайта.</p>-->
+<!--        </div>-->
+
+
+        <aside >
+            <div class="socials bInfo blueButtons">
+                <h4>Контакты</h4>
+                <ul>
+                    <li class="button bRed"><a href="http://tg.com"><div class="icon i-telegram"></div></a></li>
+                    <li class="button bBlue"><a href="#"><div class="icon i-email"></div></a></li>
+                    <li class="divider"></li>
+                    <li class="button bGreen"><a href="#"><div class="icon i-github"></div></a></li>
+                    <li class="button bOrange"><a href="#"><div class="icon i-vk"></div></a></li>
+                    <li class="button bPurple"><a href="#"><div class="icon i-twitter"></div></a></li>
+                </ul>
+            </div>
+
+            <div class="featured-links bGreen">
+                <div class="button">
+                    <div class="icon i-info"></div>
+                </div>
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#"><ins>Ipsum</ins></a></li>
+                    <li><a href="#">Dolor</a></li>
+                </ul>
+            </div>
+
+            <pre style="font-size: 0.5em; margin: auto;">
+            ,d                             ,d
+            88                             88
+,adPPYba, MM88MMM 8b,dPPYba,   ,adPPYba, MM88MMM ,adPPYba, 8b,dPPYba,
+I8[    ""   88    88P'    "8a a8P_____88   88   a8P_____88 88P'   "Y8
+ `"Y8ba,    88    88       d8 8PP"""""""   88   8PP""""""" 88
+aa    ]8I   88,   88b,   ,a8" "8b,   ,aa   88,  "8b,   ,aa 88
+`"YbbdP"'   "Y888 88`YbbdP"'   `"Ybbd8"'   "Y888 `"Ybbd8"' 88
+                  88
+                  88
+                </pre>
+
+        </aside>
+
         <main>
 
-            <article class="">
+            <!-- с тегом header-floating становится летучей карточкой -->
+            <div class="page-header header-floating">
+                <div class="container">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="page-header">
+                <div class="container right">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="page-header header-floating">
+                <div class="container centered">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+
+            <nav class="header">
+                <h1 class="logo">Title</h1>
+                <ul style="justify-content: none;">
+                    <li><a href="">Menu 1 [Options]</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Option 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Menu 2 [Options]</a>
+                        <ul class="dropdown bGreen">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Option 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Menu 3 [Options]</a>
+                        <ul class="dropdown bRed">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Option 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><a href="">Button</a></li>
+                    <li class="button bRed"><a href="">Button</a></li>
+                </ul>
+            </nav>
+
+            <nav class="header centered">
+                <h1 class="logo">Title</h1>
+                <ul>
+                    <li><a href="">Menu 1</a>
+                    </li>
+                    <li><a href="">Menu 2</a>
+                    </li>
+                    <li><a href="">Menu 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="header left">
+                <h1 class="logo">Title</h1>
+                <ul>
+                    <li><a href="">Menu 1</a>
+                    </li>
+                    <li><a href="">Menu 2</a>
+                    </li>
+                    <li><a href="">Menu 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="header right">
+                <h1 class="logo">Title</h1>
+                <ul>
+                    <li><a href="">Menu 1</a>
+                    </li>
+                    <li><a href="">Menu 2</a>
+                    </li>
+                    <li><a href="">Menu 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="header justified">
+                <h1 class="logo">Title</h1>
+                <ul>
+                    <li><a href="">Menu 1</a>
+                    </li>
+                    <li><a href="">Menu 2</a>
+                    </li>
+                    <li><a href="">Menu 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="buttons button-black">
+
+                <a class="button bRed">
+                    <div class="icon i-telegram"></div>
+                    Загрузить
+                </a>
+
+                <a class="button bRed">
+                    <div class="icon i-telegram"></div>
+                    Загрузить
+                </a>
+
+            </div>
+
+            <div class="buttons bInfo">
+
+                <a class="button bRed">
+                    <i class="fa fa-download"></i>
+                    Загрузить
+                </a>
+
+                <a class="button bRed">
+                    <div class="icon i-telegram"></div>
+                    Загрузить
+                </a>
+
+            </div>
+
+
+
+                <div class="container">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
 
                 <h3>Блоки кода</h3>
 
@@ -68,59 +255,25 @@
                     <div class="icon i-telegram"></div>
                 </div>
 
-
+            <article class="">
 
             </article>
 
-            <aside class="">
-                <div class="socials bInfo blueButtons">
-                    <h4>Контакты</h4>
-                    <ul>
-                        <li class="button bRed"><a href="http://tg.com"><div class="icon i-telegram"></div></a></li>
-                        <li class="button bBlue"><a href="#"><div class="icon i-email"></div></a></li>
-                        <li class="divider"></li>
-                        <li class="button bGreen"><a href="#"><div class="icon i-github"></div></a></li>
-                        <li class="button bOrange"><a href="#"><div class="icon i-vk"></div></a></li>
-                        <li class="button bPurple"><a href="#"><div class="icon i-twitter"></div></a></li>
-                    </ul>
-                </div>
 
-                <div class="featured-links bGreen">
-                    <div class="button">
-                        <div class="icon i-info"></div>
-                    </div>
-                    <h4>Информация</h4>
-                    <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#"><ins>Ipsum</ins></a></li>
-                        <li><a href="#">Dolor</a></li>
-                    </ul>
-                </div>
 
-                <pre style="font-size: 0.5em;">
-            ,d                             ,d
-            88                             88
-,adPPYba, MM88MMM 8b,dPPYba,   ,adPPYba, MM88MMM ,adPPYba, 8b,dPPYba,
-I8[    ""   88    88P'    "8a a8P_____88   88   a8P_____88 88P'   "Y8
- `"Y8ba,    88    88       d8 8PP"""""""   88   8PP""""""" 88
-aa    ]8I   88,   88b,   ,a8" "8b,   ,aa   88,  "8b,   ,aa 88
-`"YbbdP"'   "Y888 88`YbbdP"'   `"Ybbd8"'   "Y888 `"Ybbd8"' 88
-                  88
-                  88
-                </pre>
-
-            </aside>
 
         </main>
 
-        <header>
-        <div class="page-header" id="page-header">
-            <div class="page-header-box">
-                <h1>Гоша? Это я!</h1>
-                <p>Здесь могло бы быть славное описание для этой странички, но она выглядит и без того неплохо. <a style="text-decoration: underline;" onclick="switchHeader();">Впрочем...</a></p>
-            </div>
-        </div>
-        </header>
+
+
+<!--        <header>-->
+<!--        <div class="page-header" id="page-header">-->
+<!--            <div class="container">-->
+<!--                <h1>Гоша? Это я!</h1>-->
+<!--                <p>Здесь могло бы быть славное описание для этой странички, но она выглядит и без того неплохо. <a style="text-decoration: underline;" onclick="switchHeader();">Впрочем...</a></p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </header>-->
 
         <footer>
             <div class="footer">
@@ -147,10 +300,10 @@ aa    ]8I   88,   88b,   ,a8" "8b,   ,aa   88,  "8b,   ,aa 88
 
         function switchHeader() {
             var element = document.getElementById("page-header");
-            if (element.classList.contains("attached")) {
-                element.classList.remove("attached");
+            if (element.classList.contains("box-floating")) {
+                element.classList.remove("box-floating");
             } else {
-                element.classList.add("attached");
+                element.classList.add("box-floating");
             }
         }
 

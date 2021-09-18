@@ -36,37 +36,37 @@
 }
 
 .bRed {
-    background-color: var(--mRed);
+    background-color: var(--mRed) !important;
     color: white;
 }
 
 .bBlue {
-    background-color: var(--mBlue);
+    background-color: var(--mBlue) !important;
     color: white;
 }
 
 .bGreen {
-    background-color: var(--mGreen);
+    background-color: var(--mGreen) !important;
     color: white;
 }
 
 .bOrange {
-    background-color: var(--mOrange);
+    background-color: var(--mOrange) !important;
     color: white;
 }
 
 .bPurple {
-    background-color: var(--mPurple);
+    background-color: var(--mPurple) !important;
     color: white;
 }
 
 .bGreyBackground {
-    background-color: var(--mGreyBackground);
+    background-color: var(--mGreyBackground) !important;
     color: black;
 }
 
 .bInfo {
-    background-color: var(--mInfo);
+    background-color: var(--mInfo) !important;
     color: white;
 }
 
@@ -129,11 +129,6 @@ h1,h2,h3,h4,h5,h6,li,#logo {
 
 .number {
     font-family: "mNumber";
-}
-
-header {
-    position: relative;
-    color: var(--mWhite);
 }
 
 a {

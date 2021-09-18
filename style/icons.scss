@@ -1,3 +1,17 @@
+.icon-m {
+    width: 30px;
+    height: 30px;
+}
+
+.icon {
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: white;
+    @extend .icon-m;
+}
+
 .i-telegram {
     -webkit-mask-image: url("icons/telegram-plane-brands.svg");
     mask-image: url("icons/telegram-plane-brands.svg");

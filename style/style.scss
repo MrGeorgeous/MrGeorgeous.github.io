@@ -1,26 +1,22 @@
 
-@import 'theme.css';
-@import 'icons.css';
-@import 'header.css';
-@import 'util.css';
+@import 'theme.scss';
+@import 'icons.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'util.scss';
+@import 'formatting.scss';
+@import 'buttons.scss';
 
-
-
-
-
-
-
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome";
 
 /*
     MAIN AND ASIDE
  */
 
-main {
-    display: flex;
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 20px;
+body > aside, body > main {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 main {
@@ -34,30 +30,13 @@ main p {
     text-indent: 20px;
 }
 
-
-
-article {
-    width: 70%;
-}
-
 aside {
-    width: 30%;
+    float: right;
     min-width: 200px;
-    padding: 0px 20px 0px 20px;
-    /*display: inherit;*/
-    /*display: none;*/
-    /*width: 30%;*/
-    /*padding-left: .5rem;*/
-    /*margin-left: .5rem;*/
-    /*float: right;*/
-    /*box-shadow: inset 5px 0 5px -5px #29627e;*/
-    /*font-style: italic;*/
-    /*color: #29627e;*/
 }
 
 aside > div, .tableCard {
     display: flex;
-    width: 100%;
     /*background-color: var(--mWhite);*/
     border: 4px double var(--mWhite);
     border-radius: 15px 15px 15px 15px;
@@ -85,17 +64,6 @@ aside h1, aside h2, aside h3, aside h4, .tableCard {
     font-weight: bold;
 }
 
-.icon {
-    /*width: 100%;*/
-    /*height: 100%;*/
-    width: 30px;
-    height: 30px;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    mask-position: center;
-    -webkit-mask-position: center;
-    background-color: white;
-}
 
 
 
@@ -139,15 +107,6 @@ aside > div > ul, .tableCard > ul {
     background-color: var(--mInfo) !important;
 }
 
-.button {
-    border-radius: 4px 4px 4px 4px;
-    padding: 5px;
-    border: 3px solid var(--mWhite);
-}
-
-.button:hover {
-    cursor: pointer;
-}
 
 /*.socials .button {*/
 /*    border: 3px solid var(--mWhite);*/
@@ -172,19 +131,7 @@ aside > div > ul, .tableCard > ul {
     FOOTER
  */
 
-footer {
-    /*display: block;*/
-    /*position: relative;*/
-    color: var(--mWhite);
-}
 
-.footer {
-    background-color: var(--mInfo);
-    padding-top: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 18px;
-}
 
 .corporate-links {
     width: 100%;

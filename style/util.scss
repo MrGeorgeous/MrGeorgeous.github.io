@@ -1,0 +1,82 @@
+.flex, .flex > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.flex > ul > li {
+    list-style-type: none;
+    font-size: 16pt;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex > ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex.centered {
+    justify-content: center !important;
+}
+
+.flex.left {
+    justify-content: flex-start !important;
+}
+
+.flex.right {
+    justify-content: flex-end !important;
+}
+
+.flex.justified {
+    justify-content: space-evenly !important;
+}
+
+.container {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    vertical-align: text-top;
+    font-style: normal;
+    font-weight: bold;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container h1 {
+    font-size: 72pt;
+}
+
+.container h2 {
+    font-size: 60pt;
+}
+
+.container h3 {
+    font-size: 54pt;
+}
+
+.container h4 {
+    font-size: 36pt;
+}
+
+.container p {
+    font-size: 24px;
+    text-indent: 0px;
+}
+
+.container.left {
+    text-align: left;
+}
+
+.container.centered {
+    text-align: center;
+}
+
+.container.right {
+    text-align: right;
+}
