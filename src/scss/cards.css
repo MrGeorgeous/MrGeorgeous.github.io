@@ -1,0 +1,65 @@
+.card, .tableCard {
+  display: flex;
+  /*background-color: var(--mWhite);*/
+  border: 4px double var(--mWhite);
+  border-radius: 15px 15px 15px 15px;
+  padding: 14px 4px 14px 4px;
+  margin: -8px -8px -8px -8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+aside h1, aside h2, aside h3, aside h4, .tableCard {
+  font-family: "mHeading2", sans-serif;
+  text-transform: none;
+  font-size: 20pt;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/*.socials {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    !*background-color: var(--mWhite);*!*/
+/*    border: 4px double var(--mWhite);*/
+/*    border-radius: 4px 4px 4px 4px;*/
+/*    padding: 14px 4px 14px 4px;*/
+/*    margin: -8px -8px -8px -8px;*/
+/*}*/
+/*.socials > h4 {*/
+/*    font-family: "mHeading2", sans-serif;*/
+/*    text-transform: none;*/
+/*    font-size: 20pt;*/
+/*    font-style: normal;*/
+/*    font-weight: bold;*/
+/*}*/
+aside > div > ul, .card > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: stretch;
+}
+
+aside > div > ul, .tableCard > ul {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.blueButtons > ul > .button {
+  background-color: var(--mInfo) !important;
+}
+
+/*# sourceMappingURL=cards.css.map */

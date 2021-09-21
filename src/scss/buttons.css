@@ -1,0 +1,11 @@
+.button {
+  border-radius: 4px 4px 4px 4px;
+  padding: 5px;
+  border: 3px solid var(--mWhite);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=buttons.css.map */

@@ -21,18 +21,29 @@
     /*--mGreen: #1EBA6E;*/
     /*--mOrange: #FF8912;*/
     /*--mPurple: #7F0F8B;*/
+
     --mRed: rgba(216, 26, 54, 255);
     --mBlue: rgba(10, 47, 146, 255);
     --mGreen: rgba(25, 154, 91, 255);
     --mOrange: rgba(220, 113, 15, 255);
     --mPurple: rgba(105, 12, 115, 255);
     --mInfo: #1B1697;
+
+    --mRed: rgba(216, 26, 54, 255);
+    --mBlue: rgba(10, 47, 146, 255);
+    --mGreen: rgba(25, 154, 91, 255);
+    --mOrange: rgba(220, 113, 15, 255);
+    --mPurple: rgba(105, 12, 115, 255);
+    --mInfo: #1B1697;
+
+
     --mBrown: #8D5B2D;
     --mYellow: #FFCC00;
     --mGrey: #999999;
     --mWhite: #FFFFFF;
     --mBlack: #000000;
     --mGreyBackground: rgba(164, 167, 171, 0.2);
+    --pagePadding: 60px;
 }
 
 .bRed {
@@ -69,6 +80,31 @@
     background-color: var(--mInfo) !important;
     color: white;
 }
+
+.bBrown {
+    background-color: var(--mBrown) !important;
+    color: white;
+}
+
+.bYellow {
+    background-color: var(--mYellow) !important;
+    color: white;
+}
+
+.bGrey {
+    background-color: var(--mGrey) !important;
+    color: white;
+}
+
+.bInfoGreen {
+    background-color: #147D4A !important;
+    color: white;
+}
+
+.button.bInfoGreen {
+    border-radius: 0px 0px 0px 0px;
+}
+
 
 
 /*
@@ -111,6 +147,7 @@
     font-display: swap;
 }
 
+
 /*
 DEFAULTS
  */
@@ -143,4 +180,9 @@ a:hover {
 
 ul {
     padding-inline-start: 0px;
+}
+
+.page-padding {
+    padding-left: var(--pagePadding);
+    padding-right: var(--pagePadding);
 }

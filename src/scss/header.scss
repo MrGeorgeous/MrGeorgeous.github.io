@@ -2,8 +2,8 @@
     HEADERS AND MENUS
 */
 
-@import 'util.scss';
-@import 'containers.scss';
+//@import 'util.scss';
+//@import 'containers.scss';
 
 /*
     MENU
@@ -17,18 +17,24 @@ header {
 }
 
 .header {
-
-    display: block;
+    //@use 'flex';
+    @include flex;
+    display: flex !important;
     position: relative;
     color: var(--mWhite);
+    //width: 100%;
 
     background-color: var(--mInfo);
-    color: var(--mWhite);
     padding-top: 18px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 18px;
-    @extend .flex;
+
+}
+
+.header > ul {
+    @include flex;
+    gap: 40px !important;
 }
 
 .header > .logo {
@@ -36,6 +42,7 @@ header {
     font-size: 26pt;
     padding-left: 8px;
     padding-right: 8px;
+    margin-right: 16px;
 }
 
 .header.centered > ul {
@@ -91,14 +98,13 @@ header {
  */
 
 .page-header {
+    @extend .page-padding;
     overflow: hidden;
     max-width: 100%;
     background-color: var(--mInfo);
     color: var(--mWhite);
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
     margin-bottom: 20px;
 }
 

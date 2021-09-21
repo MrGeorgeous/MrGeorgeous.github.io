@@ -5,7 +5,8 @@
   font-family: mHeading;
   font-size: 1.5em;
   width: fit-content;
-  display: block;
+  display: inline-block;
+  float: none;
 }
 
 .button-black, .buttons.button-black > .button {
@@ -43,7 +44,8 @@ a.button:hover {
 .buttons {
   margin-top:5px;
   margin-bottom:5px;
-  padding: 5px;
+  padding: 5px 5px 5px 20px;
   @extend .flex;
   @extend .left;
+  align-items: center;
 }
