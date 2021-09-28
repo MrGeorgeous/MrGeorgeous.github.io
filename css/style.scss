@@ -24,16 +24,25 @@ $fa-font-path: "../assets/font-awesome/webfonts";
 @import "../assets/font-awesome/scss/v4-shims.scss";
 
 
-@import '../_sass/theme.scss';
-@import '../_sass/icons.scss';
-@import '../_sass/util.scss';
-@import '../_sass/header.scss';
-@import '../_sass/footer.scss';
-@import '../_sass/formatting.scss';
-@import '../_sass/buttons.scss';
-@import '../_sass/cards.scss';
-@import '../_sass/images.scss';
+//@import '../_sass/theme.scss';
+//@import '../_sass/icons.scss';
+//@import '../_sass/util.scss';
+//@import '../_sass/header.scss';
+//@import '../_sass/footer.scss';
+//@import '../_sass/formatting.scss';
+//@import '../_sass/buttons.scss';
+//@import '../_sass/cards.scss';
+//@import '../_sass/images.scss';
 
+@import 'theme.scss';
+@import 'icons.scss';
+@import 'util.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'formatting.scss';
+@import 'buttons.scss';
+@import 'cards.scss';
+@import 'images.scss';
 
 /*
     MAIN AND ASIDE

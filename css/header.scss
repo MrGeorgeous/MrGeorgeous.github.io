@@ -1,0 +1,195 @@
+
+    /*
+        HEADERS AND MENUS
+    */
+
+//@import 'util.scss';
+//@import 'containers.scss';
+
+/*
+    MENU
+*/
+
+header {
+    display: block;
+    width: 100%;
+    position: relative;
+    color: var(--mWhite);
+}
+
+.header {
+    //@use 'flex';
+    @include flex;
+    display: flex !important;
+    position: relative;
+    color: var(--mWhite);
+    //width: 100%;
+
+    background-color: var(--mInfo);
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+
+}
+
+.header > ul {
+    @include flex;
+    gap: 40px !important;
+}
+
+.header > .logo {
+    color: var(--mWhite);
+    font-size: 26pt;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 16px;
+}
+
+.header li.active a {
+    text-decoration: underline var(--mWhite);
+}
+
+.header.centered > ul {
+    justify-content: center !important;
+}
+
+.header.left {
+    justify-content: flex-start !important;
+}
+
+.header.right {
+    justify-content: flex-end !important;
+}
+
+.header.justified {
+    justify-content: space-evenly !important;
+}
+
+
+.header li {
+    position: relative;
+}
+
+.header .dropdown {
+    list-style: none;
+    z-index: 1;
+    background-color: var(--mInfo);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+}
+
+.header ul li:hover > ul, .header ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.header .dropdown li {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+/*
+    PAGE HEADERS
+ */
+
+.page-header {
+    @extend .page-padding;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: var(--mInfo);
+    color: var(--mWhite);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header-floating {
+    background: linear-gradient(0deg, var(--mWhite) 50%, var(--mInfo) 50%);
+}
+
+.header-floating > .container {
+    background-color: var(--mWhite);
+    color: var(--mInfo);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.header-floating > .container p {
+    color: var(--mBlack);
+}
+
+/*
+ BREADCUMB
+ */
+
+.breadcrumb {
+    display: inline-flex;
+    list-style: none;
+    gap: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--mInfo);
+    font-family: "mHeading", sans-serif;
+    text-transform: uppercase;
+    font-size: 20pt;
+    color: white;
+    margin: 5px 0px 5px 0px;
+}
+
+.breadcrumb:empty {
+    display: none;
+}
+
+
+
+.breadcrumb * {
+    //font-family: "mHeading", sans-serif;
+    //text-transform: uppercase;
+    //font-size: 20pt;
+    //background-color: var(--mInfo);
+    //color: white;
+}
+
+.breadcrumb li:not(:last-child):after {
+
+    content: "\f061";
+    font: normal normal normal 14px/1 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: inherit;
+    font-size: 0.9em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    //display: inline-block;
+    //content: ' ';
+    //background-image: url("../icons/arrow_white.svg");
+    //background-repeat: no-repeat;
+    //background-size: 22px 22px;
+    //height: 22px;
+    //width: 22px;
+    //margin-right: 10px;
+
+}
+
+.container > span > .fa {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#menu {
+    //position: -webkit-sticky;
+    //position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index:3;
+}
+

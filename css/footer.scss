@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    color: var(--mWhite);
+    clear: both;
+    position: absolute;
+    margin-top: 20px;
+    //height: 200px;
+    //margin-top: -200px;
+}
+
+.footer {
+    height: 30px;
+    background-color: var(--mInfo);
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+    margin-top: 20px;
+}
+
+.corporate-links {
+    width: 100%;
+}
+
+.corporate-links, .corporate-links > ol {
+    @extend .flex;
+    gap: 20px !important;
+    justify-content: space-evenly !important;
+    padding: 5px;
+}
+
+.corporate-links > ol > li:not(:last-child):after {
+    content: " | ";
+    word-spacing: 1em;
+}
