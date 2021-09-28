@@ -1,0 +1,264 @@
+
+
+//$fa-font-path: "../../node_modules/font-awesome/fonts";
+//$fa-font-path: "../css/font-awesome/fonts";
+//@import "../css/font-awesome/scss/font-awesome.scss";
+
+//@import "font-awesome-sprockets";
+//@import "font-awesome";
+
+//$fa-font-path: "fonts/font-awesome/";
+//@import 'font-awesome' !optional;
+
+//$fa-font-path: "../fonts/font-awesome";
+//@import "font-awesome/fontawesome.scss";
+
+$fa-font-path: "../font-awesome/webfonts";
+@import "../font-awesome/scss/fontawesome.scss";
+@import "../font-awesome/scss/regular.scss";
+@import "../font-awesome/scss/solid.scss";
+@import "../font-awesome/scss/brands.scss";
+@import "../font-awesome/scss/v4-shims.scss";
+
+
+@import 'theme';
+@import 'icons';
+@import 'util';
+@import 'header';
+@import 'footer';
+@import 'formatting';
+@import 'buttons';
+@import 'cards';
+@import 'images';
+
+
+/*
+    MAIN AND ASIDE
+ */
+
+//wwwwwwwwwwwsdadwwgadadadadsdsdwdwsdad
+
+body > main {
+    //padding-left: 40px;
+    //padding-right: 40px;
+    @extend .page-padding;
+}
+
+main {
+    font-family: "mMain", sans-serif;
+    margin: 0px;
+    text-transform: none;
+    font-size: 12pt;
+}
+
+main p {
+    text-indent: 20px;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    body > aside {
+        padding-left: 20px;
+        padding-right: var(--pagePadding);
+        margin-left: 20px;
+    }
+
+    aside {
+        float: right;
+        min-width: 200px;
+        //width: 250px;
+        max-width: 300px;
+        //max-width: 30%;
+        border-left: 3px solid var(--mBlue);
+        margin-bottom: 25px;
+
+        //padding-left: var(--pagePadding);
+        //padding-right: var(--pagePadding);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    aside {
+        max-width: 330px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    //main, aside {
+    //    display: block;
+    //}
+    //aside {
+    //    float: none;
+    //}
+    aside {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 10px 0px 10px;
+        width: 300px;
+        max-width: fit-content;
+        padding-bottom: 40px;
+        border-bottom: 3px double var(--mBlue);
+        margin-bottom: 40px;
+    }
+    aside > .card {
+        min-width: 100px;
+        margin: 0px;
+    }
+
+    .floating-button {
+        //position: absolute:
+        position: -webkit-sticky;
+        position: sticky;
+        //position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .header, .header > ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    :root {
+        --pagePadding: 20px;
+    }
+
+    html {
+        min-width:300px;
+    }
+
+    .container {
+        h1, h2, h3, h4 {
+            font-size: 36pt;
+        }
+
+        min-width: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-overflow: ellipsis;
+    }
+
+    aside {
+        float: none;
+        //margin: 20px;
+        //padding: 0px 0px 0px 10px;
+        width: fit-content;
+        max-width: fit-content;
+    }
+    aside > .card {
+        min-width: 100px;
+        margin: 0px;
+    }
+}
+
+
+
+
+main h1 {
+    font-size: 54pt;
+}
+
+main h2 {
+    font-size: 42pt;
+}
+
+main h3 {
+    font-size: 30pt;
+}
+
+main h4 {
+    font-size: 18pt;
+}
+
+
+article .h2 {
+    display: block;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+table {
+    border: 1px double var(--mBlue);
+    table-layout: fixed;
+    //width: 200px;
+}
+
+.left > * {
+    text-align: left;
+}
+
+.center > * {
+    text-align: center;
+}
+
+.right > * {
+    text-align: right;
+}
+
+table {
+    display: grid;
+    //grid-template-columns: repeat(5, 1fr);
+    width: fit-content;
+}
+
+//tbody {
+//    width: 100%;
+//}
+
+th,
+td {
+    border: 1px solid var(--mBlue);
+    //width: 100px;
+    width: auto;
+    overflow: hidden;
+    padding: 2px 5px 2px 5px;
+}
+
+th {
+    background-color: rgba(27, 22, 151, 1.0);
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(212, 210, 249, 0.3);
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+
+/*.socials .button {*/
+/*    border: 3px solid var(--mWhite);*/
+/*    !*border-width: 3px;*!*/
+/*    !*border-color: var(--mWhite);*!*/
+/*}*/
+
+pre.ascii {
+    font-size: 0.5em;
+    margin: auto;
+    width: fit-content;
+    background-color: var(--mInfo);
+    color: var(--mWhite);
+    padding: 5px 10px 0px 10px;
+}
+
+section {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+

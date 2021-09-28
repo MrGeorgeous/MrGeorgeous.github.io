@@ -9,7 +9,7 @@
     border-radius: 15px 15px 15px 15px;
     padding: 14px 4px 14px 4px;
     margin-bottom: 20px;
-    min-width: 300px;
+    //min-width: 300px;
     gap: 20px;
     //@include flex;
 }
@@ -23,7 +23,7 @@
 
 @counter-style mList {
     system: fixed;
-    symbols: url("../css/icons/arrow_white.svg");
+    symbols: url("../icons/arrow_white.svg");
     suffix: " ";
 }
 
@@ -46,7 +46,7 @@
 
     display: inline-block;
     content: ' ';
-    background-image: url("../css/icons/arrow_white.svg");
+    background-image: url("../icons/arrow_white.svg");
     background-repeat: no-repeat;
     background-size: 22px 22px;
     height: 22px;
@@ -105,5 +105,5 @@
 }
 
 .card.stretched {
-    width: 100%;
+    width: initial;
 }

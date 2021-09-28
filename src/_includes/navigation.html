@@ -1,20 +1,41 @@
+<!-- Navigation -->
 <header>
-    <nav class="header">
+    <nav class="header" id="menu">
         <h1 class="logo">Georgii Semenov</h1>
         <ul>
-            <li><a href="">Главная</a></a></li>
-            <li><a href="">Учеба</a></li>
-            <li><a href="">Работа</a></li>
-            <li><a href="">Наука</a></li>
-            <li><a href="">Контакты</a></li>
+            <li {% if page.url == "/" %} class="active" {% endif %}>
+                <a href="/">Главная</a>
+            </li>
+            <li {% if page.url == "/study/" %} class="active" {% endif %}>
+                <a href="/study/">Учеба</a>
+            </li>
+            <li {% if page.url == "/" %} class="active" {% endif %}>
+                <a href="">Работа</a>
+            </li>
+            <li {% if page.url == "/" %} class="active" {% endif %}>
+                <a href="">Наука</a>
+            </li>
+            <li {% if page.url == "/" %} class="active" {% endif %}>
+                <a href="">Контакты</a>
+            </li>
+            <ul>
+                <li class="button bInfoGreen"><a href="/kit.html">UI Kit</a></li>
+            </ul>
         </ul>
     </nav>
 
     <!-- с тегом header-floating становится летучей карточкой -->
     <div class="page-header header-floating" id="page-header">
         <div class="container">
-            <h1>UI Kit</h1>
-            <p>Элементы, кнопки и статьи для наполнения этого сайта.</p>
+<!--            <ul class="breadcrumb">-->
+<!--                <li><a href="">Главная</a></li>-->
+<!--                <li><a href="">Учеба</a></li>-->
+<!--            </ul>-->
+
+            {% include breadcrumb.html %}
+
+            <h1>{{ page.header-title }}</h1>
+            <p>{{ page.header-description }}</p>
         </div>
     </div>
 </header>
