@@ -5,7 +5,7 @@ page-menu: "Учеба"
 header-title: "Гоша? Это я!"
 header-description: "Здесь могло бы быть славное описание для этой странички, но она выглядит и без того неплохо."
 
-permalink: /study/
+#permalink: /study/
 
 ---
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ permalink: /study/
 
                 <section>
                     <div class="image left">
-                        <img src="{{base}}/assets/images/sample1.jpg" alt="Left Image">
+                        <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
                         <div class="image-title">
                             <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
@@ -44,7 +44,7 @@ permalink: /study/
                 <section>
 
                     <div class="image right">
-                        <img src="{{base}}/assets/images/sample2.jpg" alt="Right Image">
+                        <img src="{{ "/assets/images/sample2.jpg" | absolute_url }}" alt="Right Image">
                         <!--                <p>Таллин, <span class="number">2018</span> г.</p>-->
                         <div class="image-title">
                             <a class="button bRed" href="#">

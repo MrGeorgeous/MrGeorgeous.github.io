@@ -4,10 +4,10 @@
         <h1 class="logo">Georgii Semenov</h1>
         <ul>
             <li {% if page.url == "/" %} class="active" {% endif %}>
-                <a href="{{base}}/">Главная</a>
+                <a href="{{ "/" | absolute_url }}">Главная</a>
             </li>
             <li {% if page.url == "/study/" %} class="active" {% endif %}>
-                <a href="{{base}}/study">Учеба</a>
+                <a href="{{ "/study" | absolute_url }}">Учеба</a>
             </li>
             <li {% if page.url == "/" %} class="active" {% endif %}>
                 <a href="">Работа</a>
@@ -19,7 +19,7 @@
                 <a href="">Контакты</a>
             </li>
             <ul>
-                <li class="button bInfoGreen"><a href="/kit.html">UI Kit</a></li>
+                <li class="button bInfoGreen"><a href="{{ "/kit.html" | absolute_url }}">UI Kit</a></li>
             </ul>
         </ul>
     </nav>
