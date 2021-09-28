@@ -1,4 +1,4 @@
-@import 'theme.css';
+@import '_theme.css';
 @import 'flex.css';
 
 .card {
@@ -23,7 +23,7 @@
 
 @counter-style mList {
     system: fixed;
-    symbols: url("../assets/icons/arrow_white.svg");
+    symbols: url("../icons/arrow_white.svg");
     suffix: " ";
 }
 
@@ -46,7 +46,7 @@
 
     display: inline-block;
     content: ' ';
-    background-image: url("../assets/icons/arrow_white.svg");
+    background-image: url("../icons/arrow_white.svg");
     background-repeat: no-repeat;
     background-size: 22px 22px;
     height: 22px;

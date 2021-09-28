@@ -1,8 +1,8 @@
-source: .
+#source: .
 destination: _site/
 
 sass:
-  sass_dir: _sass
+  sass_dir: assets/_sass
 
 defaults:
   -
