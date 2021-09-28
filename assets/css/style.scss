@@ -14,21 +14,21 @@
 //@import "font-awesome/fontawesome.scss";
 
 $fa-font-path: "../font-awesome/webfonts";
-@import "../font-awesome/scss/fontawesome.scss";
-@import "../font-awesome/scss/regular.scss";
-@import "../font-awesome/scss/solid.scss";
-@import "../font-awesome/scss/brands.scss";
-@import "../font-awesome/scss/v4-shims.scss";
+@import "../font-awesome/scss/fontawesome";
+@import "../font-awesome/scss/regular";
+@import "../font-awesome/scss/solid";
+@import "../font-awesome/scss/brands";
+@import "../font-awesome/scss/v4-shims";
 
 
-@import 'theme';
+@import 'theme.css';
 @import 'icons';
 @import 'util';
-@import 'header';
+@import 'header.css';
 @import 'footer';
 @import 'formatting';
 @import 'buttons';
-@import 'cards';
+@import 'cards.css';
 @import 'images';
 
 
