@@ -17,12 +17,17 @@
 //@import "font-awesome/fontawesome.scss";
 
 $fa-font-path: "../assets/font-awesome/webfonts";
-@import "../assets/font-awesome/scss/fontawesome.scss";
-@import "../assets/font-awesome/scss/regular.scss";
-@import "../assets/font-awesome/scss/solid.scss";
-@import "../assets/font-awesome/scss/brands.scss";
-@import "../assets/font-awesome/scss/v4-shims.scss";
+//@import "../assets/font-awesome/scss/fontawesome.scss";
+//@import "../assets/font-awesome/scss/regular.scss";
+//@import "../assets/font-awesome/scss/solid.scss";
+//@import "../assets/font-awesome/scss/brands.scss";
+//@import "../assets/font-awesome/scss/v4-shims.scss";
 
+@use "fa/fontawesome.scss";
+@use "fa/regular.scss";
+@use "fa/solid.scss";
+@use "fa/brands.scss";
+@use "fa/v4-shims.scss";
 
 //@import '../_sass/theme.scss';
 //@import '../_sass/icons.scss';
@@ -43,6 +48,16 @@ $fa-font-path: "../assets/font-awesome/webfonts";
 @import 'buttons.scss';
 @import 'cards.scss';
 @import 'images.scss';
+
+//@use 'theme.scss';
+//@use 'icons.scss';
+//@use 'util.scss';
+//@use 'header.scss';
+//@use 'footer.scss';
+//@use 'formatting.scss';
+//@use 'buttons.scss';
+//@use 'cards.scss';
+//@use 'images.scss';
 
 /*
     MAIN AND ASIDE
