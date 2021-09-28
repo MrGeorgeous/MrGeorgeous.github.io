@@ -15,3 +15,4 @@ defaults:
       meta-keywords: "разработка, олимпиада, backend, программирование, преподавание"
       meta-author: "Георгий Семенов"
       page-menu: "UNSET"
+      base: "https://mrgeorgeous.github.io/WebProgramming"
