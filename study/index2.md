@@ -1,27 +1,12 @@
 ---
+layout: default
+title: Home
 
 page-menu: "Учеба"
-
 header-title: "Гоша? Это я!"
 header-description: "Здесь могло бы быть славное описание для этой странички, но она выглядит и без того неплохо."
 
-#permalink: /study/
-
 ---
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-      {% include meta.html %}
-      {% include styles.html %}
-  </head>
-  <body>
-
-      {% include navigation.html %}
-      {% include sidebar.html %}
-
-      <main>
-
-            <article class="">
 
                 <section>
                     <div class="image left">
@@ -88,25 +73,4 @@ header-description: "Здесь могло бы быть славное опис
                 <div class="button button-red">
                     <div class="icon i-telegram"></div>
                 </div>
-
-
-
-            </article>
-
-
-        </main>
-
-        <header>
-        <div class="page-header" id="page-header">
-            <div class="container">
-                <h1>Гоша? Это я!</h1>
-                <p>Здесь могло бы быть славное описание для этой странички, но она выглядит и без того неплохо. <a style="text-decoration: underline;" onclick="switchHeader();">Впрочем...</a></p>
-            </div>
-        </div>
-        </header>
-
-      {% include footer.html %}
-
-  </body>
-
-</html>
+                
