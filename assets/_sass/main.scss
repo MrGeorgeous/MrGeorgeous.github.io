@@ -142,7 +142,7 @@ main p {
 }
 
 @media only screen and (max-width: 450px) {
-    .header, .header > ul {
+    .header, .header > ul, .footer, .footer > ul {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
