@@ -1,12 +1,24 @@
 <ul class="breadcrumb">
-    {% assign crumbs = page.url | relative_url | remove:'/index.html' | split: '/' %}
-    <li><a href="{{ "/" | absolute_url }}">Главная</a></li>
-    <li>{{ crumbs }}</li>
-    {% for crumb in crumbs offset: 1 %}
-    {% if page.page-menu == 'UNSET' %}
-    <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+
+
+    {% assign categories = page.url | relative_url | split:"/" %}
+    {% assign filename_without_extension = categories | last | split:"." | first %}
+    {% if categories contains "_posts" or filename_without_extension == "index" %}
+    {% comment %} posts are like /docs/python/_posts/2016-06-06-foobar.md {% endcomment %}
+    {% comment %} OR pages are index.* i.e.: like /docs/python/index.md or index.html {% endcomment %}
+    {% assign categories = categories | pop %}
+    {% endif %}
+
+    {% assign route="" %}
+
+    <li><a href="{{ '/' | relative_url }}">Главная</a></li>
+    {% for category in categories %}
+    {% assign route = route | append: '/' | append: category %}
+    {% if forloop.last %}
+    {% if page.page-menu %}{{page.page-menu}}{% else %}{{ category }}{% endif %}
     {% else %}
-    <li><a href="{% assign crumb_limit = forloop.index %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ page.page-menu }}</a></li>
+    <li><a href="{{ route | relative_url }}">{{ category }}</a></li>
     {% endif %}
     {% endfor %}
+
 </ul>
