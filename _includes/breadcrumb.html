@@ -1,7 +1,7 @@
 <ul class="breadcrumb">
 
 
-    {% assign categories = page.url | relative_url | split:"/" %}
+    {% assign categories = page.path | split:"/" %}
     {% assign filename_without_extension = categories | last | split:"." | first %}
     {% if categories contains "_posts" or filename_without_extension == "index" %}
     {% comment %} posts are like /docs/python/_posts/2016-06-06-foobar.md {% endcomment %}
