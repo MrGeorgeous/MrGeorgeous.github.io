@@ -13,6 +13,10 @@
 
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<script type="text/javascript">
+    var timerStart = Date.now();
+</script>
   </head>
   <body>
 
@@ -27,17 +31,20 @@
             <li >
                 <a href="/study">Учеба</a>
             </li>
-            <li  class="active" >
+            <li >
                 <a href="">Работа</a>
             </li>
-            <li  class="active" >
+            <li >
                 <a href="">Наука</a>
             </li>
-            <li  class="active" >
+            <li >
                 <a href="">Контакты</a>
             </li>
             <ul>
                 <li class="button bInfoGreen"><a href="/kit.html">UI Kit</a></li>
+            </ul>
+            <ul>
+                <li class="button bPurple"><a href="/form.html">Форма</a></li>
             </ul>
         </ul>
     </nav>
@@ -113,8 +120,10 @@ aa    ]8I   88,   88b,   ,a8" "8b,   ,aa   88,  "8b,   ,aa 88
 
             <article class="">
 
-                <section>
-                    <div class="image left">
+                <section style="display: flex;">
+
+
+                    <div class="image">
                         <img src="/assets/images/sample1.jpg" alt="Left Image">
                         <div class="image-title">
                             <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
@@ -125,13 +134,101 @@ aa    ]8I   88,   88b,   ,a8" "8b,   ,aa   88,  "8b,   ,aa 88
                         </div>
                     </div>
 
-                    <h2>Heading</h2>
-                    <p>
-                        Lorem ipsum dolor sit <i>amet</i>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <div>
+                        <h2>Heading</h2>
+                        <p>
+                            Lorem ipsum dolor sit <i>amet</i>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                </section>
+
+                    <div class="break spaced"></div>
+
+                <style>
+
+                    .testy {
+                        gap: 15px;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                    .testy > .image {
+                        margin: 0px;
+                    }
+                </style>
+
+                <section style="">
+                    <div class="testy" style="display: flex;">
+                        <div class="image">
+                            <img src="/assets/images/sample1.jpg" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="/assets/images/sample1.jpg" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="/assets/images/sample1.jpg" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="/assets/images/sample1.jpg" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="/assets/images/sample1.jpg" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="/assets/images/sample1.jpg" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
 
                 <section>
+
+                    <div class="break spaced"></div>
+
+
+
 
                     <div class="image right">
                         <img src="/assets/images/sample2.jpg" alt="Right Image">
@@ -210,9 +307,14 @@ aa    ]8I   88,   88b,   ,a8" "8b,   ,aa   88,  "8b,   ,aa 88
                 </li>
             </ol>
         </div>
+        <div class="text-zone">
+            Время загрузки страницы: <span class="number app-load-time"></span> s
+        </div>
     </div>
 </footer>
 
   </body>
+
+  <script type="text/javascript" src="assets/js/default.js"></script>
 
 </html>

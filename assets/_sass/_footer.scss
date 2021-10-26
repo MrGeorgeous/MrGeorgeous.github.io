@@ -2,14 +2,14 @@ footer {
     width: 100%;
     color: var(--mWhite);
     clear: both;
-    position: absolute;
+    position: relative;
     margin-top: 20px;
     //height: 200px;
     //margin-top: -200px;
 }
 
 .footer {
-    height: 30px;
+    //height: 30px;
     background-color: var(--mInfo);
     padding-top: 18px;
     padding-left: 20px;
@@ -21,6 +21,13 @@ footer {
 .corporate-links {
     width: 100%;
 }
+
+.text-zone {
+    text-align: center;
+    font-size: 9pt;
+    font-family: 'mMain';
+}
+
 
 .corporate-links, .corporate-links > ol {
     @extend .flex;

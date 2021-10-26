@@ -9,6 +9,19 @@
   float: none;
 }
 
+.button-small {
+  border-radius: 2px 2px 2px 2px;
+  padding: 0px !important;
+  border: 1px solid var(--mWhite);
+  font-family: mHeading;
+  font-size: 10pt;
+  width: fit-content;
+  display: inline-block;
+  float: none;
+  width: 20px;
+  height: 20px;
+}
+
 .button-black, .buttons.button-black > .button {
   border: 3px solid var(--mBlack);
 }

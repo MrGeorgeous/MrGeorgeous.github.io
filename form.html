@@ -1,0 +1,65 @@
+---
+
+page-menu: "Форма"
+
+header-title: "TODOS"
+header-description: "Для хранения ваших ненаглядных тудушечек теперь есть отдельный сервис.<br>Записывайте свои тудушечки бесплатно без регистрации и смс."
+
+---
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      {% include meta.html %}
+      {% include styles.html %}
+
+      <link rel="stylesheet" href="assets/css/form.css">
+  </head>
+  <body>
+
+      {% include navigation.html %}
+      {% include sidebar.html %}
+
+      <main>
+
+            <article class="">
+
+                <section style="display:flex;">
+
+                    <div class="app-todo">
+                        <div class="input-box">
+                            <input class="input-box__input" id="app-todo-input" placeholder="Введите задачу...">
+                            <a class="button bInfo" id="app-todo-input-button">
+                                <div class="fa fa-arrow-right"></div>
+                            </a>
+                        </div>
+                        <div class="list" id="app-todo-list"></div>
+                    </div>
+
+                </section>
+
+
+            </article>
+
+
+        </main>
+
+        <div class="break"></div>
+
+<!--        <header>-->
+<!--        <div class="page-header" id="page-header">-->
+<!--            <div class="container">-->
+<!--                <h1>Гоша? Это я!</h1>-->
+<!--                <p>Здесь могло бы быть славное описание для этой странички, но она выглядит и без того неплохо. <a style="text-decoration: underline;" onclick="switchHeader();">Впрочем...</a></p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </header>-->
+
+      {% include footer.html %}
+
+  </body>
+
+  {% include scripts.html %}
+
+  <script type="text/javascript" src="assets/js/app-todo.js"></script>
+
+</html>
