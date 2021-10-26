@@ -15,7 +15,7 @@
     {% for category in categories %}
     {% assign route = route | append: '/' | append: category %}
     {% if forloop.last %}
-    {% if page.page-menu %}{{page.page-menu}}{% else %}{{ category }}{% endif %}
+    <li>{% if page.page-menu %}{{page.page-menu}}{% else %}{{ category }}{% endif %}</li>
     {% else %}
     <li><a href="{{ route | relative_url }}">{{ category }}</a></li>
     {% endif %}

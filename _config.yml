@@ -1,5 +1,6 @@
 #source: .
 destination: _site/
+baseurl: /WebProgramming
 
 sass:
   sass_dir: assets/_sass
