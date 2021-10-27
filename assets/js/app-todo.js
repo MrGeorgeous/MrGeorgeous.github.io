@@ -53,11 +53,17 @@ function addNewItem(event) {
 }
 
 
+document.querySelector("#app-todo").addEventListener('submit', event => {
+    event.preventDefault();
+    addNewItem(event);
+    return false;
+});
+
 inputBtn.onclick = addNewItem;
+
 input.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
-        //event.preventDefault();
-        inputBtn.click();
+        document.getElementById("app-todo").submit();
     }
 });
 

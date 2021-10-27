@@ -27,10 +27,12 @@ header-description: "Для хранения ваших ненаглядных �
 
                     <div class="app-todo">
                         <div class="input-box">
-                            <input class="input-box__input" id="app-todo-input" placeholder="Введите задачу...">
-                            <a class="button bInfo" id="app-todo-input-button">
-                                <div class="fa fa-arrow-right"></div>
-                            </a>
+                            <form id="app-todo" action="javascript:void(0);" onsubmit="return false;">
+                                <input class="input-box__input" id="app-todo-input" placeholder="Введите задачу...">
+                                <a class="button bInfo" type='submit' id="app-todo-input-button">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </form>
                         </div>
                         <div class="list" id="app-todo-list"></div>
                     </div>

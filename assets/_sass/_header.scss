@@ -47,6 +47,8 @@ header {
 }
 
 .header li.active a {
+    //border: 2px solid var(--mWhite);
+    //padding: 4px;
     text-decoration: underline var(--mWhite);
 }
 
