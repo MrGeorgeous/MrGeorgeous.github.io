@@ -10,6 +10,7 @@
   border: 4px double var(--mInfo);
   border-radius: 6px 6px 6px 6px;
   margin: 0px 30px 10px 30px;
+  height: fit-content;
 }
 
 .image > * {
@@ -45,6 +46,7 @@
   text-indent: 0px;
   overflow: hidden;
   border-top: 1px solid var(--mWhite);
+  width: -webkit-fill-available;
 }
 
 .image-title, .image-title > * {

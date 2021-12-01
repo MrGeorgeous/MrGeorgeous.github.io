@@ -21,8 +21,10 @@ header-description: "Здесь могло бы быть славное опис
 
             <article class="">
 
-                <section>
-                    <div class="image left">
+                <section style="display: flex;">
+
+
+                    <div class="image">
                         <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
                         <div class="image-title">
                             <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
@@ -33,13 +35,101 @@ header-description: "Здесь могло бы быть славное опис
                         </div>
                     </div>
 
-                    <h2>Heading</h2>
-                    <p>
-                        Lorem ipsum dolor sit <i>amet</i>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <div>
+                        <h2>Heading</h2>
+                        <p>
+                            Lorem ipsum dolor sit <i>amet</i>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                </section>
+
+                    <div class="break spaced"></div>
+
+                <style>
+
+                    .testy {
+                        gap: 15px;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                    .testy > .image {
+                        margin: 0px;
+                    }
+                </style>
+
+                <section style="">
+                    <div class="testy" style="display: flex;">
+                        <div class="image">
+                            <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="{{ "/assets/images/sample1.jpg" | absolute_url }}" alt="Left Image">
+                            <div class="image-title">
+                                <!--                    <span>Великий Новгород, <span class="number">2020</span> г.</span>-->
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+                                <a class="button bRed" href="#">
+                                    <div class="fa fa-arrow-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
 
                 <section>
+
+                    <div class="break spaced"></div>
+
+
+
 
                     <div class="image right">
                         <img src="{{ "/assets/images/sample2.jpg" | absolute_url }}" alt="Right Image">
@@ -106,5 +196,7 @@ header-description: "Здесь могло бы быть славное опис
       {% include footer.html %}
 
   </body>
+
+  {% include scripts.html %}
 
 </html>

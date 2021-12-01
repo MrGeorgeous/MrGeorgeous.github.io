@@ -24,6 +24,12 @@
             <ul>
                 <li class="button bPurple"><a href="{{ "/form.html" | absolute_url }}">Форма</a></li>
             </ul>
+            <ul>
+                <li class="button bYellow" ><a href="{{ "/data.html" | absolute_url }}">Лаба 6</a></li>
+            </ul>
+            <ul>
+                <li class="button bBlue"><a href="{{ "/libs.html" | absolute_url }}">Лаба 7</a></li>
+            </ul>
         </ul>
     </nav>
 
@@ -37,7 +43,7 @@
 
             {% include breadcrumb.html %}
 
-            <h1>{{ page.header-title }}</h1>
+            <h1 data-intro='Это заголовочек у страницы! Он поможет разобраться, что на ней находится.'>{{ page.header-title }}</h1>
             <p>{{ page.header-description }}</p>
         </div>
     </div>

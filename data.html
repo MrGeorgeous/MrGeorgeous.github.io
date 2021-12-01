@@ -1,0 +1,159 @@
+---
+
+page-menu: "Данные"
+
+header-title: "Данные"
+header-description: "Лабораторная работа №6 о том, как делать обещания (Promise). Пустые ли?"
+
+---
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      {% include meta.html %}
+      {% include styles.html %}
+
+      <link rel="stylesheet" href="assets/css/form.css">
+
+      <style>
+
+          aside {
+              display: none;
+          }
+
+          .albums {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              align-content: flex-start;
+              justify-content: space-evenly;
+              align-items: center;
+              gap: 0px;
+          }
+
+          .albums .image {
+              max-width: 120px;
+          }
+
+          #error {
+              width: -webkit-fill-available;
+          }
+
+          #error > a{
+              text-align: center;
+              flex-flow: column;
+          }
+
+
+      </style>
+
+  </head>
+  <body>
+
+      {% include navigation.html %}
+      {% include sidebar.html %}
+
+      <main>
+
+            <article class="">
+
+                <section style="display:block; text-align: center;">
+
+                    <div class="albums">
+
+                    </div>
+
+                    <div id="preloader">
+                        <img src="https://icons8.com/preloaders/preloaders/1487/%E2%80%8B%E2%80%8BIphone-spinner-1.gif">
+                    </div>
+
+                    <a onclick="appendPage(page); page++;">Нужно больше картинок...</a>
+
+                    <a class="button bRed" style="display: none;" id="error">
+                        <div class="fa fa-warning"></div> Ошибка сети!
+                    </a>
+
+                </section>
+
+
+            </article>
+
+
+        </main>
+
+        <div class="break"></div>
+
+<!--        <header>-->
+<!--        <div class="page-header" id="page-header">-->
+<!--            <div class="container">-->
+<!--                <h1>Гоша? Это я!</h1>-->
+<!--                <p>Здесь могло бы быть славное описание для этой странички, но она выглядит и без того неплохо. <a style="text-decoration: underline;" onclick="switchHeader();">Впрочем...</a></p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </header>-->
+
+      {% include footer.html %}
+
+  </body>
+
+  <template id="photo">
+      <div class="image">
+          <img src="" alt="Left Image">
+          <div class="image-title">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
+              <a class="button bRed" href="#">
+                  <div class="fa fa-arrow-right"></div>
+              </a>
+          </div>
+      </div>
+  </template>
+
+  {% include scripts.html %}
+
+  <script type="text/javascript">
+
+      function appendPhoto(title, thumb, url) {
+          var tbody = document.querySelector(".albums");
+          var template = document.querySelector('#photo');
+
+          var clone = template.content.cloneNode(true);
+          clone.querySelector("img").setAttribute('src', thumb);
+          clone.querySelector("img").setAttribute('alt', title);
+          clone.querySelector("span").textContent = title;
+          clone.querySelector(".button").setAttribute('href', url);
+
+          tbody.appendChild(clone);
+      }
+
+      var page = 1;
+
+      function appendPage(page) {
+
+          document.querySelector('#preloader').setAttribute('style', '');
+
+          fetch('https://jsonplaceholder.typicode.com/photos?_limit=10&_page=' + page)
+              .then(response => response.json())
+              .then(data => {
+                      for (var c of data)
+                      {
+                          appendPhoto(c['title'], c['thumbnailUrl'], c['url'])
+                      }
+                    document.querySelector('#preloader').setAttribute('style', 'display: none;');
+                  document.querySelector('#error').setAttribute('style', 'display: none;');
+                  }
+              ).catch((error) => {
+                  console.log(error);
+                  document.querySelector('#error').setAttribute('style', '');
+              });
+      }
+
+      var page = 1;
+
+      window.onload = function() {
+          appendPage(page);
+          page++;
+      }
+
+  </script>
+
+
+</html>
